@@ -5,8 +5,19 @@ from mouseinfo import mouseInfo
 
 # mouseInfo()
 
-# Cadastrar Usuario
+#abrir app a partir da barra de tarefas
+position_app = pyautogui.locateOnScreen('imageApp.png')
+pyautogui.click(position_app)
 
+# Cadastrar Usuario
+pyautogui.click(974,595, duration=2)
+pyautogui.click(997,537, duration=2)
+pyautogui.write('Daniel')
+pyautogui.click(996,567, duration=2)
+pyautogui.write('dandan123')
+
+#clicar em registrar
+pyautogui.click(909,598, duration=1)
 
 # - clicar e inserir o usuario
 pyautogui.click(997,537, duration=2)
@@ -16,7 +27,7 @@ pyautogui.click(996,567, duration=2)
 pyautogui.write('dandan123')
 
 # - clicar em entrar
-pyautogui.click(869,600, duration=2)
+pyautogui.click(868,595, duration=2)
 
 # - extrair cada produto
 with open('produtos.txt', "r") as file:
